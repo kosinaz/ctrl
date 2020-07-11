@@ -1,2 +1,1 @@
-# ctrl
-Control Their Reality Ltd.
+# Control Their Reality Ltd.
