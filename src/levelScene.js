@@ -138,6 +138,9 @@ export default class LevelScene extends Phaser.Scene {
    * @memberof LevelScene
    */
   update() {
+    if (!this.hero.body) {
+      return;
+    }
     const acceleration = this.hero.body.blocked.down ? 600 : 200;
     if (this.keys.A.isDown) {
       this.hero.setAccelerationX(-acceleration);
@@ -161,12 +164,13 @@ export default class LevelScene extends Phaser.Scene {
     const heroTileXY = this.fg.worldToTileXY(this.hero.x, this.hero.y);
     const end = this.fg.getTileAt(heroTileXY.x, heroTileXY.y);
     if (end && end.index === 140) {
-      if (this.level < 3) {
+      if (this.level < 4) {
         this.scene.restart({
           level: this.level + 1,
           first: true,
         });
       } else {
+        this.scene.stop();
         this.scene.start('WinScene');
       }
     }
@@ -202,6 +206,21 @@ export default class LevelScene extends Phaser.Scene {
           this.pasting = false;
           this.pasted.visible = false;
         }
+      }
+    }
+    if (this.level === 5 && !this.endadded) {
+      // console.log('ja');
+      const left = this.fg.getTileAt(60, 34);
+      const mid = this.fg.getTileAt(61, 34);
+      const right = this.fg.getTileAt(62, 34);
+      // if (left) console.log(left.index);
+      // if (mid) console.log(mid.index);
+      // if (right) console.log(right.index);
+      if (left && left.index === 104 &&
+        mid && mid.index === 105 &&
+        right && right.index === 106) {
+        this.fg.putTileAt(140, 61, 33);
+        this.endadded = true;
       }
     }
   }
