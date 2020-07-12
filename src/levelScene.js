@@ -23,11 +23,12 @@ export default class LevelScene extends Phaser.Scene {
    * @memberof LevelScene
    */
   create(data) {
+    this.level = data.level;
     this.scene.get('MusicScene').play(1);
     this.scene.run('PauseScene', data);
     this.scene.pause();
     this.map = this.make.tilemap({
-      key: 'level1',
+      key: 'level' + data.level,
     });
     const tileset = this.map.addTilesetImage('tileset', 'tileset');
     this.map.createStaticLayer('bg', tileset, 0, 0);
@@ -83,7 +84,7 @@ export default class LevelScene extends Phaser.Scene {
     this.selection.strokeRect(0, 0, 16, 16);
     this.selection.visible = false;
     this.keys =
-      this.input.keyboard.addKeys('W,A,S,D,UP,LEFT,DOWN,RIGHT,SPACE,ENTER,C,V,CTRL,O,P');
+      this.input.keyboard.addKeys('W,A,S,D,UP,LEFT,DOWN,RIGHT,SPACE,ENTER,C,V,CTRL,O,P,F');
     this.input.keyboard.on('keydown', (event) => {
       event.preventDefault();
     });
@@ -96,7 +97,7 @@ export default class LevelScene extends Phaser.Scene {
     this.cameras.main.setBounds(
         0, 0, this.fg.x + this.fg.width, this.fg.y + this.fg.height,
     );
-    this.ctrls = 3;
+    this.ctrls = data.level + 2;
     this.outofctrllabel = this.add.text(512, 40, 'Out of Control!', {
       fontSize: '32px',
       fontFamily: 'font',
@@ -108,6 +109,12 @@ export default class LevelScene extends Phaser.Scene {
     this.ctrllabel = this.add.text(8, 8, this.ctrls);
     this.ctrllabel.setOrigin(0.5);
     this.ctrllabel.visible = false;
+    this.input.keyboard.on('keydown-F', () => {
+      this.scene.restart({
+        level: this.level,
+        first: true,
+      });
+    });
     this.input.keyboard.on('keydown-C', () => {
       if (this.keys.CTRL.isDown && this.ctrls) {
         this.copied = this.selected;
@@ -151,6 +158,18 @@ export default class LevelScene extends Phaser.Scene {
     }
     const pointer = this.input.activePointer;
     const worldPoint = pointer.positionToCamera(this.cameras.main);
+    const heroTileXY = this.fg.worldToTileXY(this.hero.x, this.hero.y);
+    const end = this.fg.getTileAt(heroTileXY.x, heroTileXY.y);
+    if (end && end.index === 140) {
+      if (this.level < 3) {
+        this.scene.restart({
+          level: this.level + 1,
+          first: true,
+        });
+      } else {
+        this.scene.start('WinScene');
+      }
+    }
     const pointerTileXY = this.fg.worldToTileXY(worldPoint.x, worldPoint.y);
     const snappedWorldPoint = this.fg.tileToWorldXY(
         pointerTileXY.x, pointerTileXY.y,

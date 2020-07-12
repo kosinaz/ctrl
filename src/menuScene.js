@@ -63,7 +63,7 @@ and "paste" them somewhere else!`, {
     this.cameras.main.on('camerafadeoutcomplete', () => {
       Profile.timeleft = Profile.time * 60000;
       this.scene.start('LevelScene', {
-        level: data.level,
+        level: 1,
         first: true,
       });
       this.scene.stop('InfoScene');
