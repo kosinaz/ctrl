@@ -54,7 +54,8 @@ from the last safe position!`, {
         `Use A and D to move and Space to jump!
 Use your mouse to select a wall or floor segment!
 Use Ctrl + C to copy and Ctrl + V to paste!
-You have limited number of times to use Ctrl!`
+You have limited number of times to use Ctrl!
+Press F to restart the level!`
         , {
           fontSize: '24px',
           fontFamily: 'font2',
@@ -152,35 +153,25 @@ You have limited number of times to use Ctrl!`
     });
     this.input.keyboard.on('keydown-F', (event) => {
       event.preventDefault();
-      this.close();
+      this.scene.stop('LevelScene');
+      this.scene.start('LevelScene', {
+        level: data.level,
+        first: true,
+      });
     });
     const close = new Button(this, -96, 0, 'sprites', 'close');
     close.on('click', () => {
       this.cameras.main.fadeOut(300);
     });
-    // const replay = new Button(this, 96, 0, 'sprites', 'replay');
-    // replay.once('click', () => {
-    //   this.scene.stop('LevelScene');
-    //   const levels = this.cache.json.get('levels');
-    //   Profile.timeleft = Profile.time * 60000;
-    //   this.scene.start('LevelScene', {
-    //     level: data.level,
-    //     map: new AsteroidMap(levels[data.level]),
-    //   });
-    //   this.scene.stop();
-    // });
-    // this.input.keyboard.on('keydown-BACKSPACE', (event) => {
-    //   event.preventDefault();
-    //   this.scene.stop('LevelScene');
-    //   const levels = this.cache.json.get('levels');
-    //   Profile.timeleft = Profile.time * 60000;
-    //   this.scene.start('LevelScene', {
-    //     level: data.level,
-    //     map: new AsteroidMap(levels[data.level]),
-    //   });
-    //   this.scene.stop();
-    // });
-    const buttons = this.add.container(512, 528, [play, close]);
+    const restart = new Button(this, 96, 0, 'sprites', 'restart');
+    restart.once('click', () => {
+      this.scene.stop('LevelScene');
+      this.scene.start('LevelScene', {
+        level: data.level,
+        first: true,
+      });
+    });
+    const buttons = this.add.container(512, 528, [play, close, restart]);
     this.window = this.add.container(0, 576, [
       this.bg,
       this.wastedtext,

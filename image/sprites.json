@@ -2,7 +2,7 @@
 
 {
 	"filename": "audiobar",
-	"frame": {"x":34,"y":75,"w":8,"h":32},
+	"frame": {"x":0,"y":0,"w":8,"h":32},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":8,"h":32},
@@ -10,7 +10,7 @@
 },
 {
 	"filename": "close",
-	"frame": {"x":43,"y":75,"w":32,"h":32},
+	"frame": {"x":9,"y":0,"w":32,"h":32},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
@@ -18,7 +18,7 @@
 },
 {
 	"filename": "enemyidle1",
-	"frame": {"x":0,"y":0,"w":16,"h":24},
+	"frame": {"x":42,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -26,7 +26,7 @@
 },
 {
 	"filename": "enemyidle2",
-	"frame": {"x":17,"y":0,"w":16,"h":24},
+	"frame": {"x":59,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -34,7 +34,7 @@
 },
 {
 	"filename": "enemyidle3",
-	"frame": {"x":34,"y":0,"w":16,"h":24},
+	"frame": {"x":76,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -42,7 +42,7 @@
 },
 {
 	"filename": "enemyidle4",
-	"frame": {"x":51,"y":0,"w":16,"h":24},
+	"frame": {"x":93,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -50,7 +50,7 @@
 },
 {
 	"filename": "enemyrun1",
-	"frame": {"x":68,"y":0,"w":16,"h":24},
+	"frame": {"x":110,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -58,7 +58,7 @@
 },
 {
 	"filename": "enemyrun2",
-	"frame": {"x":85,"y":0,"w":16,"h":24},
+	"frame": {"x":127,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -66,7 +66,7 @@
 },
 {
 	"filename": "enemyrun3",
-	"frame": {"x":102,"y":0,"w":16,"h":24},
+	"frame": {"x":144,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -74,7 +74,7 @@
 },
 {
 	"filename": "enemyrun4",
-	"frame": {"x":0,"y":25,"w":16,"h":24},
+	"frame": {"x":161,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -82,7 +82,7 @@
 },
 {
 	"filename": "heroidle1",
-	"frame": {"x":17,"y":25,"w":16,"h":24},
+	"frame": {"x":178,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -90,7 +90,7 @@
 },
 {
 	"filename": "heroidle2",
-	"frame": {"x":34,"y":25,"w":16,"h":24},
+	"frame": {"x":195,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -98,7 +98,7 @@
 },
 {
 	"filename": "heroidle3",
-	"frame": {"x":51,"y":25,"w":16,"h":24},
+	"frame": {"x":212,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -106,7 +106,7 @@
 },
 {
 	"filename": "heroidle4",
-	"frame": {"x":68,"y":25,"w":16,"h":24},
+	"frame": {"x":229,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -114,7 +114,7 @@
 },
 {
 	"filename": "herojump1",
-	"frame": {"x":85,"y":25,"w":16,"h":24},
+	"frame": {"x":246,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -122,7 +122,7 @@
 },
 {
 	"filename": "herojump2",
-	"frame": {"x":102,"y":25,"w":16,"h":24},
+	"frame": {"x":263,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -130,7 +130,7 @@
 },
 {
 	"filename": "herojump3",
-	"frame": {"x":0,"y":50,"w":16,"h":24},
+	"frame": {"x":280,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -138,7 +138,7 @@
 },
 {
 	"filename": "herojump4",
-	"frame": {"x":17,"y":50,"w":16,"h":24},
+	"frame": {"x":297,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -146,7 +146,7 @@
 },
 {
 	"filename": "herojump5",
-	"frame": {"x":34,"y":50,"w":16,"h":24},
+	"frame": {"x":314,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -154,7 +154,7 @@
 },
 {
 	"filename": "herojump6",
-	"frame": {"x":51,"y":50,"w":16,"h":24},
+	"frame": {"x":331,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -162,7 +162,7 @@
 },
 {
 	"filename": "herojump7",
-	"frame": {"x":68,"y":50,"w":16,"h":24},
+	"frame": {"x":348,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -170,7 +170,7 @@
 },
 {
 	"filename": "herorun1",
-	"frame": {"x":85,"y":50,"w":16,"h":24},
+	"frame": {"x":365,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -178,7 +178,7 @@
 },
 {
 	"filename": "herorun2",
-	"frame": {"x":102,"y":50,"w":16,"h":24},
+	"frame": {"x":382,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -186,7 +186,7 @@
 },
 {
 	"filename": "herorun3",
-	"frame": {"x":0,"y":75,"w":16,"h":24},
+	"frame": {"x":399,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -194,7 +194,7 @@
 },
 {
 	"filename": "herorun4",
-	"frame": {"x":17,"y":75,"w":16,"h":24},
+	"frame": {"x":416,"y":0,"w":16,"h":24},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
@@ -202,7 +202,7 @@
 },
 {
 	"filename": "info",
-	"frame": {"x":76,"y":75,"w":32,"h":32},
+	"frame": {"x":433,"y":0,"w":32,"h":32},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
@@ -210,7 +210,7 @@
 },
 {
 	"filename": "music",
-	"frame": {"x":0,"y":108,"w":32,"h":32},
+	"frame": {"x":466,"y":0,"w":32,"h":32},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
@@ -218,7 +218,7 @@
 },
 {
 	"filename": "pause",
-	"frame": {"x":33,"y":108,"w":32,"h":32},
+	"frame": {"x":499,"y":0,"w":32,"h":32},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
@@ -226,7 +226,15 @@
 },
 {
 	"filename": "playon",
-	"frame": {"x":66,"y":108,"w":32,"h":32},
+	"frame": {"x":532,"y":0,"w":32,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+	"sourceSize": {"w":32,"h":32}
+},
+{
+	"filename": "restart",
+	"frame": {"x":565,"y":0,"w":32,"h":32},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
@@ -237,8 +245,8 @@
 	"version": "1.0",
 	"image": "sprites.png",
 	"format": "RGBA8888",
-	"size": {"w":118,"h":140},
+	"size": {"w":597,"h":32},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:62bb60db6177e16f6a6b3527f2683e17:43eba2bc0cdc2ab13cb0e8fc7edb53bc:1eabdf11f75e3a4fe3147baf7b5be24b$"
+	"smartupdate": "$TexturePacker:SmartUpdate:2a25167a1ccf416e89238f9830793cfa:0131fb492504ac1e25a7e259ba4859ae:1eabdf11f75e3a4fe3147baf7b5be24b$"
 }
 }
