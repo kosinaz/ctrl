@@ -1,0 +1,22 @@
+{
+  "name": "ctrl",
+  "version": "0.1.0",
+  "description": "A dynamic platformer.",
+  "main": "game.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kosinaz/ctrl.git"
+  },
+  "author": "Kosina Zoltan",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/kosinaz/ctrl/issues"
+  },
+  "homepage": "https://github.com/kosinaz/ctrl#readme"
+}
