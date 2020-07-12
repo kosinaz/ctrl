@@ -164,7 +164,7 @@ export default class LevelScene extends Phaser.Scene {
     const heroTileXY = this.fg.worldToTileXY(this.hero.x, this.hero.y);
     const end = this.fg.getTileAt(heroTileXY.x, heroTileXY.y);
     if (end && end.index === 140) {
-      if (this.level < 4) {
+      if (this.level < 5) {
         this.scene.restart({
           level: this.level + 1,
           first: true,
